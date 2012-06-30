@@ -1,4 +1,4 @@
-package moca.operators;
+package ori.ogapi.operators;
 
 public class LongOperatorPlus implements OperatorPlus1T<Long> {
 

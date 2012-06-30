@@ -1,15 +1,15 @@
-package moca.graphs;
+package ori.ogapi.graphs;
 
-import moca.operators.LongOperatorPlus;
-import moca.comparators.LongComparator;
+import ori.ogapi.operators.LongOperatorPlus;
+import ori.ogapi.comparators.LongComparator;
 
-import moca.graphs.vertices.Vertex;
-import moca.graphs.vertices.VertexCollection;
-import moca.graphs.vertices.ParentFunction;
-import moca.graphs.edges.Edge;
-import moca.graphs.edges.EdgeCollection;
-import moca.graphs.edges.IllegalEdgeException;
-import moca.graphs.edges.NeighbourEdge;
+import ori.ogapi.graphs.vertices.Vertex;
+import ori.ogapi.graphs.vertices.VertexCollection;
+import ori.ogapi.graphs.vertices.ParentFunction;
+import ori.ogapi.graphs.edges.Edge;
+import ori.ogapi.graphs.edges.EdgeCollection;
+import ori.ogapi.graphs.edges.IllegalEdgeException;
+import ori.ogapi.graphs.edges.NeighbourEdge;
 
 import java.util.NoSuchElementException;
 import java.util.ArrayList;

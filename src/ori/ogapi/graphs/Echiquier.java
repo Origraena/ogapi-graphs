@@ -1,12 +1,12 @@
-package moca.graphs;
+package ori.ogapi.graphs;
 
-import moca.graphs.vertices.ParentFunction;
-import moca.graphs.vertices.Vertex;
-import moca.graphs.vertices.VertexArrayList;
-import moca.graphs.vertices.VertexUnaryFunction;
-import moca.graphs.vertices.VertexArrayListUnaryFunction;
-import moca.graphs.edges.Edge;
-import moca.graphs.edges.NeighboursLists;
+import ori.ogapi.graphs.vertices.ParentFunction;
+import ori.ogapi.graphs.vertices.Vertex;
+import ori.ogapi.graphs.vertices.VertexArrayList;
+import ori.ogapi.graphs.vertices.VertexUnaryFunction;
+import ori.ogapi.graphs.vertices.VertexArrayListUnaryFunction;
+import ori.ogapi.graphs.edges.Edge;
+import ori.ogapi.graphs.edges.NeighboursLists;
 
 import java.util.ArrayList;
 import java.util.NoSuchElementException;

@@ -1,4 +1,4 @@
-package moca.graphs.vertices;
+package ori.ogapi.graphs.vertices;
 
 import java.lang.Iterable;
 import java.util.Iterator;

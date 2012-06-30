@@ -1,7 +1,7 @@
-package moca.graphs.visu;
+package ori.ogapi.graphs.visu;
 
-import moca.graphs.Graph;
-import moca.graphs.Point;
+import ori.ogapi.graphs.Graph;
+import ori.ogapi.graphs.Point;
 import java.lang.Math;
 import java.util.NoSuchElementException;
 

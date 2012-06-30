@@ -1,6 +1,6 @@
-package moca.graphs.vertices;
+package ori.ogapi.graphs.vertices;
 
-import moca.graphs.IllegalConstructionException;
+import ori.ogapi.graphs.IllegalConstructionException;
 
 import java.util.Collection;
 import java.util.NoSuchElementException;

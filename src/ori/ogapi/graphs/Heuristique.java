@@ -1,10 +1,10 @@
-package moca.graphs;
+package ori.ogapi.graphs;
 
 import java.util.ArrayList;
 
-import moca.graphs.Graph;
-import moca.graphs.vertices.ParentFunction;
-import moca.graphs.vertices.Vertex;
+import ori.ogapi.graphs.Graph;
+import ori.ogapi.graphs.vertices.ParentFunction;
+import ori.ogapi.graphs.vertices.Vertex;
 
 public class Heuristique<E> extends ArrayList<E>{
 	public Heuristique() {

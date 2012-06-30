@@ -1,7 +1,7 @@
-import moca.*;
-import moca.graphs.*;
-import moca.graphs.edges.*;
-import moca.graphs.vertices.*;
+import ori.ogapi.*;
+import ori.ogapi.graphs.*;
+import ori.ogapi.graphs.edges.*;
+import ori.ogapi.graphs.vertices.*;
 import java.lang.Exception;
 import java.util.Iterator;
 import java.util.ArrayList;

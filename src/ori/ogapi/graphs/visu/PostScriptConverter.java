@@ -1,9 +1,9 @@
-package moca.graphs.visu;
+package ori.ogapi.graphs.visu;
 
-import moca.graphs.Graph;
-import moca.graphs.Point;
-import moca.graphs.vertices.VertexIdentityFunction;
-import moca.graphs.edges.Edge;
+import ori.ogapi.graphs.Graph;
+import ori.ogapi.graphs.Point;
+import ori.ogapi.graphs.vertices.VertexIdentityFunction;
+import ori.ogapi.graphs.edges.Edge;
 import java.util.Iterator;
 import java.io.File;
 import java.io.BufferedOutputStream;

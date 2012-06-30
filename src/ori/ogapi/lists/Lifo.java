@@ -1,4 +1,4 @@
-package moca.lists;
+package ori.ogapi.lists;
 
 public class Lifo<E> extends LinkedList<E> {
 	

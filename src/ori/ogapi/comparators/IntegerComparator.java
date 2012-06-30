@@ -1,4 +1,4 @@
-package moca.comparators;
+package ori.ogapi.comparators;
 
 import java.util.Comparator;
 

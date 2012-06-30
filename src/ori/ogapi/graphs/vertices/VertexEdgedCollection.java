@@ -1,6 +1,6 @@
-package moca.graphs.vertices;
+package ori.ogapi.graphs.vertices;
 
-import moca.graphs.edges.NeighbourEdge;
+import ori.ogapi.graphs.edges.NeighbourEdge;
 import java.util.Iterator;
 
 public interface VertexEdgedCollection<V,E> extends VertexCollection<V> {

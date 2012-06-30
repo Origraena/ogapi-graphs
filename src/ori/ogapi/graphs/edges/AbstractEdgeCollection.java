@@ -1,4 +1,4 @@
-package moca.graphs.edges;
+package ori.ogapi.graphs.edges;
 
 import java.lang.UnsupportedOperationException;
 import java.util.NoSuchElementException;

@@ -1,14 +1,14 @@
-package moca.graphs;
+package ori.ogapi.graphs;
 
-import moca.operators.OperatorPlus1T;
+import ori.ogapi.operators.OperatorPlus1T;
 
-import moca.graphs.vertices.Vertex;
-import moca.graphs.vertices.VertexGrid;
-import moca.graphs.vertices.ParentFunction;
-import moca.graphs.edges.Edge;
-import moca.graphs.edges.EdgeCollectionByVertices;
-import moca.graphs.edges.IllegalEdgeException;
-import moca.graphs.edges.NeighbourEdge;
+import ori.ogapi.graphs.vertices.Vertex;
+import ori.ogapi.graphs.vertices.VertexGrid;
+import ori.ogapi.graphs.vertices.ParentFunction;
+import ori.ogapi.graphs.edges.Edge;
+import ori.ogapi.graphs.edges.EdgeCollectionByVertices;
+import ori.ogapi.graphs.edges.IllegalEdgeException;
+import ori.ogapi.graphs.edges.NeighbourEdge;
 
 import java.util.NoSuchElementException;
 import java.util.ArrayList;

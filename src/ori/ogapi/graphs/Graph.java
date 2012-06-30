@@ -1,20 +1,20 @@
-package moca.graphs;
+package ori.ogapi.graphs;
 
-import moca.operators.OperatorPlus1T;
+import ori.ogapi.operators.OperatorPlus1T;
 
-import moca.lists.LinkedList;
-import moca.lists.Lifo;
-import moca.lists.Fifo;
+import ori.ogapi.lists.LinkedList;
+import ori.ogapi.lists.Lifo;
+import ori.ogapi.lists.Fifo;
 
-import moca.graphs.vertices.Vertex;
-import moca.graphs.vertices.VertexCollection;
-import moca.graphs.vertices.VertexArrayList;
-import moca.graphs.vertices.VertexBinaryFunction;
-import moca.graphs.vertices.ParentFunction;
-import moca.graphs.edges.Edge;
-import moca.graphs.edges.NeighbourEdge;
-import moca.graphs.edges.EdgeCollection;
-import moca.graphs.edges.IllegalEdgeException;
+import ori.ogapi.graphs.vertices.Vertex;
+import ori.ogapi.graphs.vertices.VertexCollection;
+import ori.ogapi.graphs.vertices.VertexArrayList;
+import ori.ogapi.graphs.vertices.VertexBinaryFunction;
+import ori.ogapi.graphs.vertices.ParentFunction;
+import ori.ogapi.graphs.edges.Edge;
+import ori.ogapi.graphs.edges.NeighbourEdge;
+import ori.ogapi.graphs.edges.EdgeCollection;
+import ori.ogapi.graphs.edges.IllegalEdgeException;
 
 
 import java.util.Collection;

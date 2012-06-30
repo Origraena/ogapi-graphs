@@ -1,7 +1,7 @@
-package moca.graphs.visu;
+package ori.ogapi.graphs.visu;
 
-import moca.graphs.vertices.Vertex;
-import moca.graphs.vertices.VertexIdentityFunction;
+import ori.ogapi.graphs.vertices.Vertex;
+import ori.ogapi.graphs.vertices.VertexIdentityFunction;
 
 public class SCCIdentityFunction extends VertexIdentityFunction {
 	public String exec(Vertex v) {

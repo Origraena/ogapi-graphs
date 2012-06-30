@@ -1,14 +1,14 @@
-package moca.graphs;
+package ori.ogapi.graphs;
 
-import moca.graphs.vertices.Vertex;
-import moca.graphs.vertices.VertexCollection;
-import moca.graphs.vertices.BipartedVertexCollection;
-import moca.graphs.vertices.VertexBinaryFunction;
-import moca.graphs.vertices.ParentFunction;
-import moca.graphs.edges.Edge;
-import moca.graphs.edges.NeighbourEdge;
-import moca.graphs.edges.EdgeCollection;
-import moca.graphs.edges.IllegalEdgeException;
+import ori.ogapi.graphs.vertices.Vertex;
+import ori.ogapi.graphs.vertices.VertexCollection;
+import ori.ogapi.graphs.vertices.BipartedVertexCollection;
+import ori.ogapi.graphs.vertices.VertexBinaryFunction;
+import ori.ogapi.graphs.vertices.ParentFunction;
+import ori.ogapi.graphs.edges.Edge;
+import ori.ogapi.graphs.edges.NeighbourEdge;
+import ori.ogapi.graphs.edges.EdgeCollection;
+import ori.ogapi.graphs.edges.IllegalEdgeException;
 
 import java.util.Iterator;
 import java.util.NoSuchElementException;

@@ -1,7 +1,7 @@
-package moca.graphs.vertices;
+package ori.ogapi.graphs.vertices;
 
-import moca.graphs.Point;
-import moca.graphs.edges.NeighbourEdge;
+import ori.ogapi.graphs.Point;
+import ori.ogapi.graphs.edges.NeighbourEdge;
 
 import java.util.ArrayList;
 import java.util.NoSuchElementException;

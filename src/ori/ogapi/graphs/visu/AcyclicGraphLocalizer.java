@@ -1,11 +1,11 @@
-package moca.graphs.visu;
+package ori.ogapi.graphs.visu;
 
 import java.util.NoSuchElementException;
 import java.util.ArrayList;
 import java.util.Iterator;
-import moca.graphs.Point;
-import moca.graphs.Graph;
-import moca.graphs.edges.NeighbourEdge;
+import ori.ogapi.graphs.Point;
+import ori.ogapi.graphs.Graph;
+import ori.ogapi.graphs.edges.NeighbourEdge;
 
 public class AcyclicGraphLocalizer extends AbstractLocalizer implements Localizer {
 

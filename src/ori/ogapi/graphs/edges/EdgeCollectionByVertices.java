@@ -1,6 +1,6 @@
-package moca.graphs.edges;
+package ori.ogapi.graphs.edges;
 
-import moca.graphs.vertices.VertexEdgedCollection;
+import ori.ogapi.graphs.vertices.VertexEdgedCollection;
 
 import java.lang.Iterable;
 import java.util.NoSuchElementException;

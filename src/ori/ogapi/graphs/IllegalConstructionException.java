@@ -1,4 +1,4 @@
-package moca.graphs;
+package ori.ogapi.graphs;
 
 public class IllegalConstructionException extends Exception {
 

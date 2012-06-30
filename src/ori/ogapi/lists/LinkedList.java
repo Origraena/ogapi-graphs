@@ -1,4 +1,4 @@
-package moca.lists;
+package ori.ogapi.lists;
 
 public abstract class LinkedList<E> extends java.util.LinkedList<E> {
 

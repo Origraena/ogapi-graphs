@@ -1,4 +1,4 @@
-package moca.graphs.edges;
+package ori.ogapi.graphs.edges;
 
 public class Edge<Value> {
 

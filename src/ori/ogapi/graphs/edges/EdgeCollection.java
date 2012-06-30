@@ -1,4 +1,4 @@
-package moca.graphs.edges;
+package ori.ogapi.graphs.edges;
 
 import java.lang.Iterable;
 import java.util.NoSuchElementException;

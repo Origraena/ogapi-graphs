@@ -1,8 +1,8 @@
-package moca.graphs;
+package ori.ogapi.graphs;
 
-import moca.graphs.vertices.VertexArrayList;
-import moca.graphs.edges.NeighboursLists;
-import moca.graphs.edges.NeighbourEdge;
+import ori.ogapi.graphs.vertices.VertexArrayList;
+import ori.ogapi.graphs.edges.NeighboursLists;
+import ori.ogapi.graphs.edges.NeighbourEdge;
 
 import java.util.Iterator;
 

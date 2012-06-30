@@ -1,4 +1,4 @@
-package moca.operators;
+package ori.ogapi.operators;
 
 /**
  * Interface which represents the operator+.

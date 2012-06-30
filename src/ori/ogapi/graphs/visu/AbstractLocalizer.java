@@ -1,4 +1,4 @@
-package moca.graphs.visu;
+package ori.ogapi.graphs.visu;
 
 import java.util.NoSuchElementException;
 

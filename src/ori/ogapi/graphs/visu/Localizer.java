@@ -1,8 +1,8 @@
-package moca.graphs.visu;
+package ori.ogapi.graphs.visu;
 
 import java.util.NoSuchElementException;
-import moca.graphs.Point;
-import moca.graphs.Graph;
+import ori.ogapi.graphs.Point;
+import ori.ogapi.graphs.Graph;
 
 public interface Localizer {
 
