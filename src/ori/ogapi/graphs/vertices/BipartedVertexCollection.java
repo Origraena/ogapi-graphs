@@ -1,5 +1,6 @@
 package ori.ogapi.graphs.vertices;
 
+import ori.ogapi.util.AbstractIterator;
 import ori.ogapi.graphs.IllegalConstructionException;
 
 import java.util.Collection;
@@ -139,7 +140,7 @@ public class BipartedVertexCollection<Value> implements VertexCollection<Value> 
 		return _secondSet;
 	}
 
-	public java.util.Iterator<Vertex<Value> > iterator() {
+	public Iterator iterator() {
 		return new Iterator(_firstSet.iterator(), _secondSet.iterator());
 	}
 
@@ -152,9 +153,10 @@ public class BipartedVertexCollection<Value> implements VertexCollection<Value> 
 	private VertexCollection<Value> _secondSet = null;
 
 	
-	protected class Iterator implements java.util.Iterator<Vertex<Value> > {
+	protected class Iterator extends AbstractIterator<Vertex<Value> > {
 
-		public Iterator(java.util.Iterator<Vertex<Value> > firstIterator, java.util.Iterator<Vertex<Value> > secondIterator) {
+		public Iterator(ori.ogapi.util.Iterator<Vertex<Value> > firstIterator,
+					    ori.ogapi.util.Iterator<Vertex<Value> > secondIterator) {
 			_firstIterator = firstIterator;
 			_secondIterator = secondIterator;
 		}

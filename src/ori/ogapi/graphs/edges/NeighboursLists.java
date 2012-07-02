@@ -1,5 +1,7 @@
 package ori.ogapi.graphs.edges;
 
+import ori.ogapi.util.AbstractIterator;
+import ori.ogapi.util.AdaptedIterator;
 import java.util.ArrayList;
 import java.lang.UnsupportedOperationException;
 import java.util.NoSuchElementException;
@@ -123,19 +125,19 @@ public class NeighboursLists<E> extends AbstractEdgeCollection<E> implements Edg
 			return false;
 	}
 
-	public java.util.Iterator<Edge<E> > iterator() {
+	public Iterator iterator() {
 		return new Iterator(_neighbours);
 	}
 
-	public java.util.Iterator<NeighbourEdge<E> > neighbourIterator(int id) {
-		return _neighbours.get(id).iterator();
+	public ori.ogapi.util.Iterator<NeighbourEdge<E> > neighbourIterator(int id) {
+		return new AdaptedIterator(_neighbours.get(id).iterator());
 	}
 
 	protected ArrayList<ArrayList<NeighbourEdge<E> > > _neighbours = new ArrayList<ArrayList<NeighbourEdge<E> > >();
 	protected int _size = 0;
 
 	
-	protected class Iterator implements java.util.Iterator<Edge<E> > {
+	protected class Iterator extends AbstractIterator<Edge<E> > {
 	
 		public Iterator(ArrayList<ArrayList<NeighbourEdge<E> > > source) {
 			_source = source;

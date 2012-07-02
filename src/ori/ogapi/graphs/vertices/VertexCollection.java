@@ -1,7 +1,7 @@
 package ori.ogapi.graphs.vertices;
 
 import java.lang.Iterable;
-import java.util.Iterator;
+import ori.ogapi.util.Iterator;
 import java.lang.UnsupportedOperationException;
 
 public interface VertexCollection<Value> extends Iterable<Vertex<Value> > {

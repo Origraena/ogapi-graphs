@@ -1,7 +1,7 @@
 package ori.ogapi.graphs;
 
-import ori.ogapi.operators.LongOperatorPlus;
-import ori.ogapi.comparators.LongComparator;
+import ori.ogapi.util.LongOperatorPlus;
+import ori.ogapi.util.LongComparator;
 
 import ori.ogapi.graphs.vertices.Vertex;
 import ori.ogapi.graphs.vertices.VertexCollection;

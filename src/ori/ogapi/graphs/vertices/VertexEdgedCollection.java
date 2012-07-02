@@ -1,7 +1,7 @@
 package ori.ogapi.graphs.vertices;
 
 import ori.ogapi.graphs.edges.NeighbourEdge;
-import java.util.Iterator;
+import ori.ogapi.util.Iterator;
 
 public interface VertexEdgedCollection<V,E> extends VertexCollection<V> {
 

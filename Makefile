@@ -17,9 +17,8 @@ SRC := src/ori/ogapi/graphs/*.java \
        src/ori/ogapi/graphs/edges/*.java \
        src/ori/ogapi/graphs/vertices/*.java \
        src/ori/ogapi/graphs/visu/*.java \
-       src/ori/ogapi/comparators/*.java \
        src/ori/ogapi/lists/*.java \
-       src/ori/ogapi/operators/*.java
+       src/ori/ogapi/util/*.java
 #       src/ori/ogapi/tree/*.java
 LIB_DIR := lib
 TARGET_DIR := target
@@ -63,7 +62,7 @@ all: debug
 debug: $(TARGET_DEBUG)
 
 # release mode
-#release: $(TARGET_RELEASE) doc
+release: $(TARGET_RELEASE) doc
 
 # test mode
 #test: debug build-test exec-test

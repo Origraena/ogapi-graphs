@@ -1,5 +1,6 @@
 package ori.ogapi.graphs.vertices;
 
+import ori.ogapi.util.AbstractIterator;
 import ori.ogapi.graphs.Point;
 import ori.ogapi.graphs.edges.NeighbourEdge;
 
@@ -235,7 +236,7 @@ public class VertexGrid<V,E> implements VertexEdgedCollection<V,E> {
 	private ArrayList<E> _edges;
 
 
-	public class Iterator implements java.util.Iterator<Vertex<V> > {
+	public class Iterator extends AbstractIterator<Vertex<V> > {
 		public boolean hasNext() {
 			return _current < size();
 		}
@@ -251,7 +252,7 @@ public class VertexGrid<V,E> implements VertexEdgedCollection<V,E> {
 		private int _current = 0;
 	};
 
-	public class NeighbourIterator implements java.util.Iterator<NeighbourEdge<E> > {
+	public class NeighbourIterator extends AbstractIterator<NeighbourEdge<E> > {
 		public NeighbourIterator(int id) {
 			_id = id;
 		}

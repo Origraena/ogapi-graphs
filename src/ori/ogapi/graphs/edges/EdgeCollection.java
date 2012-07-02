@@ -3,7 +3,7 @@ package ori.ogapi.graphs.edges;
 import java.lang.Iterable;
 import java.util.NoSuchElementException;
 import java.lang.UnsupportedOperationException;
-import java.util.Iterator;
+import ori.ogapi.util.Iterator;
 
 public interface EdgeCollection<Value> extends Iterable<Edge<Value> > {
 

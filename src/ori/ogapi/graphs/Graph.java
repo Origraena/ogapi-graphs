@@ -1,6 +1,6 @@
 package ori.ogapi.graphs;
 
-import ori.ogapi.operators.OperatorPlus1T;
+import ori.ogapi.util.OperatorPlus1T;
 
 import ori.ogapi.lists.LinkedList;
 import ori.ogapi.lists.Lifo;
@@ -15,11 +15,12 @@ import ori.ogapi.graphs.edges.Edge;
 import ori.ogapi.graphs.edges.NeighbourEdge;
 import ori.ogapi.graphs.edges.EdgeCollection;
 import ori.ogapi.graphs.edges.IllegalEdgeException;
+import ori.ogapi.util.AbstractIterator;
 
 
+import java.util.Iterator;
 import java.util.Collection;
 import java.lang.Iterable;
-import java.util.Iterator;
 import java.util.NoSuchElementException;
 import java.lang.UnsupportedOperationException;
 import java.util.ArrayList;
@@ -481,7 +482,7 @@ public class Graph<V,E> implements Iterable<V> {
 	 * It is used to provide a generic value iterator based on the vertex collection one.
 	 * You have just to override the vertexIterator() graph method to make this one works.
 	 */
-	protected class VertexValueIterator implements Iterator<V> {
+	protected class VertexValueIterator extends AbstractIterator<V> {
 		
 		public VertexValueIterator(Iterator<Vertex<V> > iterator) {
 			_iterator = iterator;
@@ -506,7 +507,7 @@ public class Graph<V,E> implements Iterable<V> {
 	/**
 	 * Iterator over the neighbours of a specific vertex.
 	 */
-	public class NeighbourIterator implements Iterator<Vertex<V> > {
+	public class NeighbourIterator extends AbstractIterator<Vertex<V> > {
 		
 		/**
 		 * Constructor.
@@ -552,7 +553,7 @@ public class Graph<V,E> implements Iterable<V> {
 	 * This class is a generic walk algorithm iterator, its waiting list been unimplemented, 
 	 * this class cannot be instantiated, use BFSIterator or DFSIterator instead of.
 	 */
-	public abstract class WalkIterator implements Iterator<Vertex<V> > {
+	public abstract class WalkIterator extends AbstractIterator<Vertex<V> > {
 
 		protected WalkIterator(Graph<V,E> source, int rootID, VertexBinaryFunction<V> function) {
 			if (source.getNbVertices() == 0)

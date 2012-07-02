@@ -2,7 +2,7 @@ package ori.ogapi.graphs.edges;
 
 import java.lang.UnsupportedOperationException;
 import java.util.NoSuchElementException;
-import java.util.Iterator;
+import ori.ogapi.util.Iterator;
 
 public abstract class AbstractEdgeCollection<E> implements EdgeCollection<E> {
 

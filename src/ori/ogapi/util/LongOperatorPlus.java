@@ -1,5 +1,8 @@
-package ori.ogapi.operators;
+package ori.ogapi.util;
 
+/**
+ * Implementation of OperatorPlus for <code>long</code> type.
+ */
 public class LongOperatorPlus implements OperatorPlus1T<Long> {
 
 	public Long exec(Long b, Long c) {

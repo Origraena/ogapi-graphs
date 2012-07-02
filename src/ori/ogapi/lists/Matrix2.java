@@ -3,6 +3,11 @@ package ori.ogapi.lists;
 import java.lang.Iterable;
 import java.util.NoSuchElementException;
 
+/**
+ * 2D matrix.
+ * <p>The size of the matrix must be set at instantiation and cannot be changed after.
+ * But the <code>null</code> element may be used.</p>
+ */
 public class Matrix2<E> implements Iterable<E> {
 
 	public Matrix2(int height, int width) {

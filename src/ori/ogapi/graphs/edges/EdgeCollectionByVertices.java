@@ -5,7 +5,7 @@ import ori.ogapi.graphs.vertices.VertexEdgedCollection;
 import java.lang.Iterable;
 import java.util.NoSuchElementException;
 import java.lang.UnsupportedOperationException;
-import java.util.Iterator;
+import ori.ogapi.util.Iterator;
 
 public class EdgeCollectionByVertices<E> extends AbstractEdgeCollection<E> {
 

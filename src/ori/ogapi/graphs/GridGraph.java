@@ -1,6 +1,6 @@
 package ori.ogapi.graphs;
 
-import ori.ogapi.operators.OperatorPlus1T;
+import ori.ogapi.util.OperatorPlus1T;
 
 import ori.ogapi.graphs.vertices.Vertex;
 import ori.ogapi.graphs.vertices.VertexGrid;

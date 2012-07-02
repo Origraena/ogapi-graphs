@@ -1,7 +1,8 @@
 package ori.ogapi.graphs.vertices;
 
+import ori.ogapi.util.Iterator;
+import ori.ogapi.util.AdaptedIterator;
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.NoSuchElementException;
 
 public class VertexArrayList<V> extends ArrayList<Vertex<V> > implements VertexCollection<V> {
@@ -33,6 +34,10 @@ public class VertexArrayList<V> extends ArrayList<Vertex<V> > implements VertexC
 		for (int i = id ; i < size() ; i++)
 			get(i).setID(get(i).getID()-1);
 		return v;
+	}
+
+	public Iterator<Vertex<V> > iterator() {
+		return new AdaptedIterator(super.iterator());
 	}
 
 };
