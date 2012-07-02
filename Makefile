@@ -44,7 +44,12 @@ LIB_TEST := lib/junit-4.11.jar:$(DEBUG_DIR)/class
 
 ##### DOC PROPERTIES ##################################
 DOC_DIR := $(RELEASE_DIR)/doc
-PACKAGES := ori.ogapi
+PACKAGES := ori.ogapi.graphs \
+			ori.ogapi.graphs.edges \
+			ori.ogapi.graphs.vertices \
+			ori.ogapi.graphs.visu \
+			ori.ogapi.lists \
+			ori.ogapi.util
 WIN_TITLE := "OGAPI - java graph API"
 DOC_TITLE := "<b>OGAPI</b> - <i>java graph API</i>"
 DOC_TOP := "OGAPI"
@@ -55,7 +60,7 @@ DOC_SRC := $(SRC_DIR)
 ##### TARGET RULES ####################################
 
 # all
-all: debug 
+all: debug release
 #test release
 
 # debug mode

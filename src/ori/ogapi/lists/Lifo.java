@@ -5,7 +5,7 @@ package ori.ogapi.lists;
  */
 public class Lifo<E> extends LinkedList<E> {
 	
-	/** @see java.lang.Serializable */
+	/** @see java.io.Serializable */
 	private static final long serialVersionUID = 2011022601L;
 
 	/**
