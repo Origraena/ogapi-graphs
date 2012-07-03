@@ -16,9 +16,9 @@ import ori.ogapi.graphs.edges.NeighbourEdge;
 import ori.ogapi.graphs.edges.EdgeCollection;
 import ori.ogapi.graphs.edges.IllegalEdgeException;
 import ori.ogapi.util.AbstractIterator;
+import ori.ogapi.util.Iterator;
 
 
-import java.util.Iterator;
 import java.util.Collection;
 import java.lang.Iterable;
 import java.util.NoSuchElementException;
@@ -858,7 +858,7 @@ public class Graph<V,E> implements Iterable<V> {
 			comp.add(u);
 			_rootComponent.set(u.getID(),root);
 			_colors[u.getID()] = BLACK;
-			for (Iterator<Vertex<V> > iterator = _prev.get(u.getID()).iterator() ; iterator.hasNext() ;) {
+			for (java.util.Iterator<Vertex<V> > iterator = _prev.get(u.getID()).iterator() ; iterator.hasNext() ;) {
 				current = iterator.next();
 				if (_colors[current.getID()] == WHITE)
 					secondVisit(current,root,comp);

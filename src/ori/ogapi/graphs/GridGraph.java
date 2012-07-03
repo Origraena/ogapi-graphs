@@ -9,11 +9,11 @@ import ori.ogapi.graphs.edges.Edge;
 import ori.ogapi.graphs.edges.EdgeCollectionByVertices;
 import ori.ogapi.graphs.edges.IllegalEdgeException;
 import ori.ogapi.graphs.edges.NeighbourEdge;
+import ori.ogapi.util.Iterator;
 
 import java.util.NoSuchElementException;
 import java.util.ArrayList;
 import java.util.Comparator;
-import java.util.Iterator;
 
 
 public class GridGraph<V,E> extends Graph<V,E> {

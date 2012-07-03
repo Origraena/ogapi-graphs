@@ -4,7 +4,7 @@ import ori.ogapi.graphs.vertices.VertexArrayList;
 import ori.ogapi.graphs.edges.NeighboursLists;
 import ori.ogapi.graphs.edges.NeighbourEdge;
 
-import java.util.Iterator;
+import ori.ogapi.util.Iterator;
 
 public class DirectedSimpleGraph<V,E> extends Graph<V,E> {
 

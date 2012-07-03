@@ -10,7 +10,7 @@ import ori.ogapi.graphs.edges.NeighbourEdge;
 import ori.ogapi.graphs.edges.EdgeCollection;
 import ori.ogapi.graphs.edges.IllegalEdgeException;
 
-import java.util.Iterator;
+import ori.ogapi.util.Iterator;
 import java.util.NoSuchElementException;
 
 public class BipartedGraph<V,E> extends Graph<V,E> {
