@@ -750,7 +750,9 @@ public class Graph<V,E> implements Iterable<V> {
 		_stronglyConnectedComponents = new StronglyConnectedComponents();
 	}
 	public int getNbComponents() {
-		if ((_stronglyConnectedComponents == null) && (getNbVertices() > 0))
+		if (getNbVertices() <= 0)
+			return 0;
+		if (_stronglyConnectedComponents == null)
 			resetStronglyConnectedComponents();
 		return _stronglyConnectedComponents.getNbComponents();
 	}
@@ -810,6 +812,8 @@ public class Graph<V,E> implements Iterable<V> {
 		protected void init() {
 			_components = new ArrayList<ArrayList<Vertex<V> > >();
 			_rootComponent = new ArrayList<Vertex<V> >(getNbVertices());
+			if (getNbVertices() <= 0)
+				return;
 			_prev = new ArrayList<ArrayList<Vertex<V> > >(getNbVertices());
 			_revList = new Fifo<Vertex<V> >();
 			_colors = new int[getNbVertices()];
@@ -824,6 +828,8 @@ public class Graph<V,E> implements Iterable<V> {
 			}
 		}
 		protected void process() {
+			if (getNbVertices() <= 0)
+				return;
 			Vertex<V> current = null;
 			// first walk
 			for (Iterator<Vertex<V> > iterator = vertexIterator() ; iterator.hasNext() ;) {
