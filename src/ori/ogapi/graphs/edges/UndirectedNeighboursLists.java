@@ -1,6 +1,7 @@
 package ori.ogapi.graphs.edges;
 
 import java.util.NoSuchElementException;
+import java.util.ArrayList;
 
 
 public class UndirectedNeighboursLists<E> extends NeighboursLists<E> implements EdgeCollection<E> {
@@ -46,6 +47,30 @@ public class UndirectedNeighboursLists<E> extends NeighboursLists<E> implements 
 		return cpt;
 	}
 
+	public ori.ogapi.util.Iterator<Edge<E> > iterator() {
+		return new SingleIterator(_neighbours);
+	}
+
+	protected class SingleIterator extends Iterator {
+		public SingleIterator(ArrayList<ArrayList<NeighbourEdge<E> > > source) {
+			super(source);
+		}
+		@Override
+		protected void processNextEdge() {
+			boolean processing = true;
+			super.processNextEdge();
+			while (processing) {
+				if (!hasNext())
+					processing = false;
+				else {
+					if (_current > getNeighbourAt(_current,_neighbourIndex)) 
+						super.processNextEdge();
+					else
+						processing = false;
+				}
+			}
+		}
+	};
 
 };
 

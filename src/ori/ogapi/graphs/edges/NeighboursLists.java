@@ -125,7 +125,7 @@ public class NeighboursLists<E> extends AbstractEdgeCollection<E> implements Edg
 			return false;
 	}
 
-	public Iterator iterator() {
+	public ori.ogapi.util.Iterator iterator() {
 		return new Iterator(_neighbours);
 	}
 
@@ -179,8 +179,8 @@ public class NeighboursLists<E> extends AbstractEdgeCollection<E> implements Edg
 		}
 
 		private ArrayList<ArrayList<NeighbourEdge<E> > > _source = null;
-		private int _current;
-		private int _neighbourIndex;
+		protected int _current;
+		protected int _neighbourIndex;
 		private Edge<E> _next;
 
 	};
