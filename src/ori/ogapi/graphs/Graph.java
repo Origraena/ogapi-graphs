@@ -200,12 +200,12 @@ public class Graph<V,E> implements Iterable<V> {
 		return getEdgeValue(u.getID(),v.getID());
 	}
 
-	public Edge<E> getEdge(Vertex<V> u, Vertex<V> v) throws NoSuchElementException {
-		return _edges.get(u.getID(),v.getID());
-	}
-
 	public Edge<E> getEdge(int idU, int idV) throws NoSuchElementException {
 		return _edges.get(idU,idV);
+	}
+
+	public Edge<E> getEdge(Vertex<V> u, Vertex<V> v) throws NoSuchElementException {
+		return _edges.get(u.getID(),v.getID());
 	}
 
 	public void addNeighbourEdge(int idU, NeighbourEdge<E> edge) throws NoSuchElementException, IllegalEdgeException {

@@ -130,7 +130,7 @@ public class NeighboursLists<E> extends AbstractEdgeCollection<E> implements Edg
 	}
 
 	public ori.ogapi.util.Iterator<NeighbourEdge<E> > neighbourIterator(int id) {
-		return new AdaptedIterator(_neighbours.get(id).iterator());
+		return new NeighbourIterator(_neighbours.get(id));
 	}
 
 	protected ArrayList<ArrayList<NeighbourEdge<E> > > _neighbours = new ArrayList<ArrayList<NeighbourEdge<E> > >();
@@ -184,6 +184,25 @@ public class NeighboursLists<E> extends AbstractEdgeCollection<E> implements Edg
 		private Edge<E> _next;
 
 	};
+
+	protected class NeighbourIterator extends AbstractIterator<NeighbourEdge<E> > {
+		public NeighbourIterator(ArrayList<NeighbourEdge<E> > source) {
+			_source = source;
+		}
+		public boolean hasNext() {
+			return (_neighbourIndex < _source.size());
+		}
+		public NeighbourEdge<E> next() throws NoSuchElementException {
+			if (!hasNext())
+				throw new NoSuchElementException();
+			return _source.get(_neighbourIndex++);
+		}
+		public void remove() throws UnsupportedOperationException {
+			throw new UnsupportedOperationException();
+		}
+		private ArrayList<NeighbourEdge<E> > _source = null;
+		protected int _neighbourIndex = 0;
+	}
 
 };
 
