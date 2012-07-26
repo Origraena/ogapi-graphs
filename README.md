@@ -1,4 +1,5 @@
-OGAPI
-=====
+OGAPI-graphs
+============
+
 Graph API
 
