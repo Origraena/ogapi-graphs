@@ -16,17 +16,15 @@ SRC_DIR := src
 SRC := src/ori/ogapi/graphs/*.java \
        src/ori/ogapi/graphs/edges/*.java \
        src/ori/ogapi/graphs/vertices/*.java \
-       src/ori/ogapi/graphs/visu/*.java \
-       src/ori/ogapi/lists/*.java \
-       src/ori/ogapi/util/*.java
+       src/ori/ogapi/graphs/visu/*.java
 #       src/ori/ogapi/tree/*.java
 LIB_DIR := lib
 TARGET_DIR := target
-TARGET := ogapi.jar
+TARGET := ogapi-graphs.jar
 # for compiler
-LIB_CP :=
+LIB_CP := $(LIB_DIR)/ogapi-core.jar
 # for linker
-LIB :=
+LIB := $(LIB_DIR)/ogapi-core.jar
 ENTRY_POINT :=
 MANIFEST := MANIFEST.MF
 
@@ -47,9 +45,7 @@ DOC_DIR := $(RELEASE_DIR)/doc
 PACKAGES := ori.ogapi.graphs \
 			ori.ogapi.graphs.edges \
 			ori.ogapi.graphs.vertices \
-			ori.ogapi.graphs.visu \
-			ori.ogapi.lists \
-			ori.ogapi.util
+			ori.ogapi.graphs.visu
 WIN_TITLE := "OGAPI - java graph API"
 DOC_TITLE := "<b>OGAPI</b> - <i>java graph API</i>"
 DOC_TOP := "OGAPI"
@@ -89,33 +85,33 @@ $(TARGET_DEBUG): obj-debug manifest
 	@mkdir -p $(DEBUG_DIR)/class
 	@echo "Invoking $(LINKER)..."
 	$(LINKER) $(LFLAG) $(TARGET_DEBUG) MANIFEST.MF -C $(DEBUG_DIR)/class ./
-#	$(CP) $(LIB_DIR) $(DEBUG_DIR)
+	$(CP) $(LIB_DIR) $(DEBUG_DIR)
 
 # app file in release mode
 $(TARGET_RELEASE): obj-release manifest
 	@mkdir -p $(RELEASE_DIR)/class
 	@echo "Invoking $(LINKER)..."
 	$(LINKER) $(LFLAG) $(TARGET_RELEASE) MANIFEST.MF -C $(RELEASE_DIR)/class ./
-#	$(CP) $(LIB_DIR) $(RELEASE_DIR)
+	$(CP) $(LIB_DIR) $(RELEASE_DIR)
 
 # generate manifest file for jar
 manifest:
 	@echo "Generating manifest file : $(MANIFEST)..."
 	@echo "Manifest-Version: 1.0" > $(MANIFEST)
 	@echo "Main-Class: $(ENTRY_POINT)" >> $(MANIFEST)
-#	@echo "Class-Path: $(LIB)" >> $(MANIFEST)
+	@echo "Class-Path: $(LIB)" >> $(MANIFEST)
 
 # object files in debug mode
 obj-debug:
 	@mkdir -p $(DEBUG_DIR)/class
 	@echo "Invoking compiler..."
-	$(COMPILER) -d $(DEBUG_DIR)/class $(SRC)
+	$(COMPILER) -d $(DEBUG_DIR)/class -cp $(LIB_CP) $(SRC)
 
 # object files in release mode
 obj-release:
 	@mkdir -p $(RELEASE_DIR)/class
 	@echo "Invoking compiler..."
-	$(COMPILER) -d $(RELEASE_DIR)/class $(SRC)
+	$(COMPILER) -d $(RELEASE_DIR)/class -cp $(LIB_CP) $(SRC)
 
 # tests
 
